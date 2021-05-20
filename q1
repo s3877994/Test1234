@@ -1,0 +1,17 @@
+let n = parseInt(prompt("Nhập giá trị n"))
+let inputNumber = parseInt(prompt("Nhập giá trị inputNumber"))
+function findOppositeNumber() {
+if ( n<4 || n >20 || n%2==1) {
+     console.log('N không hợp lệ');
+} else if ( inputNumber<0 || inputNumber >= n) {
+     console.log('inputNumber không hợp lệ');
+} else {
+    if ( inputNumber <= (n/2)) {
+        inputNumber += (n/2);
+    } else {
+        inputNumber -= n;
+    }
+}   
+return inputNumber;
+}
+   console.log(findOppositeNumber());
